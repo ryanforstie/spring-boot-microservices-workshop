@@ -16,7 +16,7 @@ public class MovieCatalogServiceApplication {
 	}
 
 	// Method so we can create one instance and not have to re-create instances
-//	@LoadBalanced
+	@LoadBalanced
 	@Bean
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
